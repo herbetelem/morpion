@@ -20,7 +20,12 @@ def placePion(axeY, axeX, tour, plateau):
 
 def placeBin(axeY, axeX, tour, plateau):
     axeX -= 1
-    axeY -= 1
+    if axeY == "a":
+        axeY = 0
+    elif axeY == "b":
+        axeY = 1
+    elif axeY == "c":
+        axeY = 2
     if tour%2 == 0:
         plateau[axeY][axeX] = 1
     else:

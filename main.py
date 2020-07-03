@@ -19,6 +19,7 @@ def main():
         if variables.tour > 0:
             clear()
 
+        print(variables.plateauBin)
         pPlat.printMap(variables.plateau)
         
         if variables.tour %2 == 0:
@@ -40,7 +41,8 @@ def main():
             while axeX > 3 or axeX < 1:
                 axeX = int(input("entre 1 et 3 : "))
         variables.plateau = placePion.placePion(axeY, axeX, variables.tour, variables.plateau)
-        # variables.plateauBin = placePion.placeBin(axeY, axeX, variables.tour, variables.plateauBin)
+        variables.plateauBin = placePion.placeBin(axeY, axeX, variables.tour, variables.plateauBin)
+        
         variables.tour += 1
 
 
