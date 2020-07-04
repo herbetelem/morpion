@@ -11,3 +11,4 @@ statutParti = "ok"
 tour = 0
 joueurA = ""
 joueurB = ""
+conditionWin = 3
